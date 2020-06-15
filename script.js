@@ -1,10 +1,3 @@
-$(document).ready(function () {
-  // populates current date when dom is loaded
-  let dateParagraph = $("#currentDay");
-  let todayDate = moment().format("dddd, MMMM Do YYYY");
-  dateParagraph.text(todayDate);
-});
-
 // Clears info/refresh
 $("#clear").click(function () {
   localStorage.clear();
@@ -111,4 +104,79 @@ saveNote9.addEventListener("click", updateOutput9);
 //sets the input of text area into local storage
 function updateOutput9() {
   localStorage.setItem("content9", input_textarea9.value);
+}
+
+//Time Color Code
+let now = new Date().getHours();
+
+if (now > 9) {
+  $("#note1").addClass("past");
+} else if (now >= 9 && now < 10) {
+  $("#note1").addClass("present");
+} else if (now < 9) {
+  $("#note1").addClass("future");
+}
+
+if (now > 10) {
+  $("#note2").addClass("past");
+} else if (now >= 10 && now < 11) {
+  $("#note2").addClass("present");
+} else if (now < 10) {
+  $("#note2").addClass("future");
+}
+
+if (now > 11) {
+  $("#note3").addClass("past");
+} else if (now >= 11 && now < 12) {
+  $("#note3").addClass("present");
+} else if (now < 11) {
+  $("#note3").addClass("future");
+}
+
+if (now > 12) {
+  $("#note4").addClass("past");
+} else if (now >= 12 && now < 13) {
+  $("#note4").addClass("present");
+} else if (now < 12) {
+  $("#note4").addClass("future");
+}
+
+if (now > 13) {
+  $("#note5").addClass("past");
+} else if (now >= 13 && now < 14) {
+  $("#note5").addClass("present");
+} else if (now < 13) {
+  $("#note5").addClass("future");
+}
+
+if (now > 14) {
+  $("#note6").addClass("past");
+} else if (now >= 14 && now < 15) {
+  $("#note6").addClass("present");
+} else if (now < 14) {
+  $("#note6").addClass("future");
+}
+
+if (now > 15) {
+  $("#note7").addClass("past");
+} else if (now >= 15 && now < 16) {
+  $("#note7").addClass("present");
+} else if (now < 15) {
+  $("#note7").addClass("future");
+}
+
+if (now > 16) {
+  $("#note8").addClass("past");
+} else if (now >= 16 && now < 17) {
+  $("#note8").addClass("present");
+} else if (now < 16) {
+  $("#note8").addClass("future");
+}
+
+if (now > 17) {
+  $("#note9").addClass("past");
+} else if (now >= 17 && now < 18) {
+  $("#note9").addClass("present");
+} else if (now < 17) {
+  $("#note9").addClass("future");
 }

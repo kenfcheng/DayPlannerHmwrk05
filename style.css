@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -24,17 +24,17 @@ body {
   justify-content: center;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-top: 1px solid darkgray;
   border-bottom: 1px solid darkgray;
   padding-top: 15px;
   font-size: 20px;
-  width:10vw;
+  width: 10vw;
 }
 
 textarea {
@@ -75,16 +75,16 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #06aed5;
   color: white;
   opacity: 1;
   font-size: 25px;
 }
 
-.saveBtn:Hover {
+.saveBtn:hover {
   font-size: 35px;
   opacity: 0.6;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .clearBtn {
@@ -99,16 +99,15 @@ textarea {
   display: block;
 }
 
-.clearBtn:Hover {
+.clearBtn:hover {
   font-size: 30px;
   opacity: 0.6;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 640px) {
-.time-block {
- font-size: 15px;
- width: 10vw;
-}
-
+  .time-block {
+    font-size: 15px;
+    width: 10vw;
+  }
 }

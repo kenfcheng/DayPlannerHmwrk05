@@ -4,6 +4,8 @@ $("#clear").click(function () {
   location.reload();
 });
 
+$("#currentDay").text(moment().format("dddd,MMMM Do"));
+
 //Saves text input to timeslots
 
 const input_textarea1 = document.querySelector("#note1");

@@ -4,6 +4,13 @@ body {
   line-height: 1;
 }
 
+#currentDay {
+  color: red;
+  font-size: larger;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 textarea {
   background: transparent;
   border: none;
